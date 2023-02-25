@@ -1,0 +1,32 @@
+.bids-container-text.answers-container {
+    width: 100%;
+}
+
+.answers-container .answer {
+    background: #00000038;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+span.q {
+    /* display: inline; */
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+span.question-wrap {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+span.a {
+    /* color: var(--primary-color); */
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+}

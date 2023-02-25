@@ -1,0 +1,27 @@
+import './App.css';
+import { Navbar, Footer } from './components'
+import { Home, Profile, Item, Create, Login, Register, Form, Results, NotFound } from './pages'
+import { Routes, Route } from "react-router-dom";
+
+function App() {
+
+  return (
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path=":item/:id" element={<Item />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/form/:formId" element={<Form />} />
+        <Route path="/form/results/:formId" element={<Results />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;

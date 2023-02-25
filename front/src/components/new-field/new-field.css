@@ -1,0 +1,58 @@
+.new-field {
+    background: #000;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+.new-field h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+.new-field .label-wrap{
+    display: flex;
+}
+.new-field .label-wrap .add-choice {
+    float: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor:pointer;
+    background:none;
+    color: #C81CC5;
+    margin-left : 20px;
+    border: 1px solid #C91CC3;
+}
+.new-field label {
+    font-size: 14px;
+margin-bottom: 10px;
+}
+.new-field-type {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 800px) {
+    .new-field-type {
+        flex-direction: column;
+    }
+
+}
+.new-field-type label {
+    font-size: 16px;
+}
+
+.choices .choice {
+    margin: 20px 0;
+
+}
+.added-fields{
+    padding-left: 15px;
+    border: 1px solid #C91CC3;
+    border-radius: 10px;
+    padding: 15px;
+}
+.added-fields .added-field-choice{
+    padding-left: 30px;
+}
+.added-field-choice > *{
+    width: fit-content !important;
+}
